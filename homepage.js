@@ -33,6 +33,11 @@ generateButton.addEventListener("click", function generate() {
         firstPassword.textContent = "";
         secondPassword.textContent = "";
         createRandomPassword();
+        copyPassword1.innerHTML = `<span class="material-symbols-outlined">
+            content_copy</span>`;
+        copyPassword2.innerHTML = `<span class="material-symbols-outlined">
+            content_copy</span>`;
+        
     }
 
 });
@@ -42,7 +47,8 @@ copyPassword1.addEventListener("click", function () {
     console.log("a copiat");
     hasCopiedText1 = true;
     if (hasCopiedText1)
-         copyPassword1.innerHTML = "Copied";
+        copyPassword1.innerHTML = "Copied";
+  
 });
 
 copyPassword2.addEventListener("click", function () {
